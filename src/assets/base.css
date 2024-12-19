@@ -58,6 +58,15 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Monocraft';
+  src: url('Monocraft.ttc');
+  /* You can specify font-weight and font-style if needed */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);
@@ -67,6 +76,7 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
+    'Monocraft',
     Inter,
     -apple-system,
     BlinkMacSystemFont,
