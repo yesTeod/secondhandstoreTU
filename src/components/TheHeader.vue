@@ -1,5 +1,8 @@
 <template>
   <header class="header-container">
+    <div>
+      <img src="/src/assets/clou.png" alt="Logo" class="header-image">
+    </div>
     <nav class="nav-content">
       <div class="left-section">
         <!-- Left section placeholder for future additions -->
@@ -8,7 +11,7 @@
       <div class="center-section">Home</div>
 
       <div class="right-section">
-        <img src="/src/assets/Compass.webp" alt="Logo" class="header-image" />
+        Log in
       </div>
     </nav>
   </header>
@@ -20,9 +23,11 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background: linear-gradient(to bottom, #376ec8, #69b7e5);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  background: linear-gradient(to bottom, 
+    #376EC8 3%,
+    #69B7E5 10vh
+  );
   z-index: 1000;
 }
 

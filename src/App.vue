@@ -1,14 +1,14 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import Headerz from './components/header.vue'
+import TheMain from './components/TheMain.vue'
+import TheHeader from './components/TheHeader.vue'
+
 </script>
 
 <template>
-  <Headerz />
-
+  <TheHeader />
+  
   <main>
-    <TheWelcome />
+    <TheMain />
   </main>
 </template>
 
