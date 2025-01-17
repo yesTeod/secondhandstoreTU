@@ -27,13 +27,22 @@ const handleDeleteProduct = (productToDelete) => {
     products.value.splice(index, 1)
   }
 }
+
+const handleBuyProduct = (product) => {
+  alert(`Thank you for purchasing ${product.name} for ${product.price.toFixed(2)}!`)
+  // Here you could add additional logic for purchase handling
+}
 </script>
 
 <template>
   <div class="product-manager">
     <AddProduct @add-product="handleAddProduct" />
     <ProductFilter v-model="filterText" />
-    <ProductList :products="filteredProducts" @delete-product="handleDeleteProduct" />
+    <ProductList
+      :products="filteredProducts"
+      @delete-product="handleDeleteProduct"
+      @buy-product="handleBuyProduct"
+    />
   </div>
 </template>
 
@@ -41,5 +50,6 @@ const handleDeleteProduct = (productToDelete) => {
 .product-manager {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 </style>
